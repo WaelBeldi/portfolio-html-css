@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstack Developer Portfolio | JavaScript Expert</title>
+    <meta name="description" content="Portfolio of a fullstack JavaScript developer specializing in modern web applications. Explore projects, skills, and get in touch.">
+    <meta name="author" content="Fullstack Developer">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="animated-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-title">
+                    <h1>Hi, I'm <span class="text-primary glow-text">John Doe</span></h1>
+                    <h2>&lt;<span class="text-secondary">Fullstack JavaScript Developer</span> /&gt;</h2>
+                </div>
+                
+                <p class="hero-description">
+                    Building modern, scalable web applications with cutting-edge technologies.
+                    Passionate about clean code, elegant solutions, and bringing ideas to life.
+                </p>
+                
+                <div class="hero-cta">
+                    <button class="btn btn-primary" onclick="scrollToSection('projects')">View Projects</button>
+                    <button class="btn btn-outline" onclick="scrollToSection('contact')">Get In Touch</button>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="mailto:contact@example.com" class="social-link">
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <button onclick="scrollToSection('about')" aria-label="Scroll to about section">
+                        <i data-lucide="arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-main">
+                    <div class="profile-photo-wrapper">
+                        <div class="profile-glow"></div>
+                        <img src="assets/profile.webp" alt="Profile Photo" class="profile-photo">
+                    </div>
+                    <div class="about-text">
+                        <h2>About <span class="text-primary">Me</span></h2>
+                        <div class="about-content">
+                            <p>
+                                I'm a fullstack JavaScript developer with a passion for creating seamless,
+                                performant web experiences. With expertise spanning from frontend frameworks
+                                to backend architectures, I build end-to-end solutions that deliver results.
+                            </p>
+                            <p>
+                                My journey in web development has equipped me with a deep understanding of
+                                modern JavaScript ecosystems, including React, Node.js, TypeScript, and
+                                cloud technologies. I'm constantly learning and adapting to new tools and
+                                best practices.
+                            </p>
+                            <p>
+                                When I'm not coding, you'll find me contributing to open-source projects,
+                                writing technical articles, or exploring the latest in web technologies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i data-lucide="code-2"></i>
+                        </div>
+                        <div class="highlight-content">
+                            <h3>Clean Code</h3>
+                            <p>Writing maintainable, efficient code that scales with your business needs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i data-lucide="rocket"></i>
+                        </div>
+                        <div class="highlight-content">
+                            <h3>Fast Delivery</h3>
+                            <p>Rapid development without compromising quality or performance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <div class="highlight-content">
+                            <h3>Collaborative</h3>
+                            <p>Strong communicator who thrives in agile, team-oriented environments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tech <span class="text-primary">Stack</span></h2>
+                <p>Technologies and tools I work with to bring ideas to life.</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i data-lucide="layout"></i> Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i data-lucide="server"></i> Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i data-lucide="wrench"></i> Tools & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Jest</span>
+                        <span class="skill-tag">Webpack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured <span class="text-primary">Projects</span></h2>
+                <p>A selection of recent work showcasing my expertise in fullstack development.</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>E-Commerce Platform</h3>
+                    <p class="project-description">
+                        Full-featured online store with payment integration, inventory management, and admin dashboard. 
+                        Built with React, Node.js, and MongoDB.
+                    </p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Stripe</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                            <i data-lucide="github"></i> Code
+                        </a>
+                        <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                            <i data-lucide="external-link"></i> Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Real-Time Chat Application</h3>
+                    <p class="project-description">
+                        Scalable messaging app with WebSocket connections, user authentication, and media sharing. 
+                        Features include group chats and notifications.
+                    </p>
+                    <div class="project-tags">
+                        <span>Next.js</span>
+                        <span>Socket.io</span>
+                        <span>PostgreSQL</span>
+                        <span>Redis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                            <i data-lucide="github"></i> Code
+                        </a>
+                        <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                            <i data-lucide="external-link"></i> Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Task Management Tool</h3>
+                    <p class="project-description">
+                        Collaborative project management platform with kanban boards, team workflows, and deadline tracking. 
+                        Optimized for productivity.
+                    </p>
+                    <div class="project-tags">
+                        <span>Vue.js</span>
+                        <span>Express</span>
+                        <span>GraphQL</span>
+                        <span>AWS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                            <i data-lucide="github"></i> Code
+                        </a>
+                        <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                            <i data-lucide="external-link"></i> Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>AI Content Generator</h3>
+                    <p class="project-description">
+                        Smart content creation tool powered by machine learning APIs. Generate blog posts, social media content, 
+                        and marketing copy.
+                    </p>
+                    <div class="project-tags">
+                        <span>TypeScript</span>
+                        <span>OpenAI</span>
+                        <span>React</span>
+                        <span>Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                            <i data-lucide="github"></i> Code
+                        </a>
+                        <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                            <i data-lucide="external-link"></i> Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container-narrow">
+            <div class="section-header">
+                <h2>Get In <span class="text-primary">Touch</span></h2>
+                <p>Have a project in mind? Let's work together to bring your ideas to life.</p>
+            </div>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-full">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-loading" style="display: none;">Sending...</span>
+                </button>
+            </form>
+            
+            <div id="successMessage" class="success-message" style="display: none;">
+                <i data-lucide="check-circle"></i>
+                <div>
+                    <strong>Message sent!</strong>
+                    <p>Thank you for reaching out. I'll get back to you soon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2024 <span class="text-primary">John Doe</span>. All rights reserved.</p>
+                <p>Built with <span class="text-secondary">HTML</span> + <span class="text-primary">CSS</span> + <span class="text-secondary">JavaScript</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
